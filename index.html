@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="planetList" ng-controller="planetCtrl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodingHouse Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <h1>Star Wahs</h1>
+
+    <nav class="navbar navbar-default">
+      
+      <div class="container-fluid grey">
+          
+          <ul class="nav navbar-nav">
+            
+            <li class="white">
+              
+              <a href="#" class="dropdown-toggle bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planets</a>
+              <ul class="dropdown-menu space">
+                <li ng-repeat="planet in planetArr">
+                  <a ng-href="{{planet.url}}">{{planet.name}}</a>
+                </li>
+              
+              </ul>
+            
+            </li>
+          
+          </ul>
+      
+      </div><!-- /.container-fluid -->
+    
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
